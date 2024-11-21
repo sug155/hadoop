@@ -215,6 +215,15 @@ stop-dfs.sh
 stop-yarn.sh
 ```
 
+```bash
+ssh-keygen -t rsa
+
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+chmod 640 ~/.ssh/authorized_keys
+```
+
+
 ---
 
 This process should help you install Hadoop on Ubuntu and run the WordCount MapReduce example. Let me know if you need help with any specific step or further details!
